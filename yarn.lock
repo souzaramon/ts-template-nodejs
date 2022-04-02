@@ -851,7 +851,7 @@ caniuse-lite@^1.0.30001317:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001322.tgz#2e4c09d11e1e8f852767dab287069a8d0c29d623"
   integrity sha512-neRmrmIrCGuMnxGSoh+x7zYtQFFgnSY2jaomjU56sCkTA6JINqQrxutF459JpWcWRajvoyn95sOXq4Pqrnyjew==
 
-chalk@^2.0.0:
+chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -1036,6 +1036,14 @@ detect-newline@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
+
+did-you-mean@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/did-you-mean/-/did-you-mean-0.0.1.tgz#8851ce82407903cb62c12cb6ad4f676921ccdec3"
+  integrity sha1-iFHOgkB5A8tiwSy2rU9naSHM3sM=
+  dependencies:
+    levenshtein "*"
+    underscore "*"
 
 diff-sequences@^27.5.1:
   version "27.5.1"
@@ -1230,6 +1238,15 @@ get-stream@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-6.0.1.tgz#a262d8eef67aced57c2852ad6167526a43cbf7b7"
   integrity sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==
+
+git-commit-msg-linter@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-4.1.1.tgz#e6434078b0f10a5d8fbb60c67865feeed3d89443"
+  integrity sha512-NGwrrSiPbhQYEfVoFIFRjt3QZ9U4eKZseg2s+cT8pCJkkZlMB8BfvMPWKmbPDD7O70VfLU8fjG7CVQJzKkIkhQ==
+  dependencies:
+    chalk "^2.4.2"
+    did-you-mean "^0.0.1"
+    supports-color "^8.1.1"
 
 glob-parent@~5.1.2:
   version "5.1.2"
@@ -1928,6 +1945,11 @@ leven@^3.1.0:
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
   integrity sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==
 
+levenshtein@*:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/levenshtein/-/levenshtein-1.0.5.tgz#3911737a9cb56da345d008f55782c6f138979ba3"
+  integrity sha1-ORFzepy1baNF0Aj1V4LG8TiXm6M=
+
 levn@~0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
@@ -2413,7 +2435,7 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-supports-color@^8.0.0:
+supports-color@^8.0.0, supports-color@^8.1.1:
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-8.1.1.tgz#cd6fc17e28500cff56c1b86c0a7fd4a54a73005c"
   integrity sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==
@@ -2578,6 +2600,11 @@ typescript@^4.6.3:
   version "4.6.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
   integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
+
+underscore@*:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.2.tgz#276cea1e8b9722a8dbed0100a407dda572125881"
+  integrity sha512-ekY1NhRzq0B08g4bGuX4wd2jZx5GnKz6mKSqFL4nqBlfyMGiG10gDFhDTMEfYmDL6Jy0FUIZp7wiRB+0BP7J2g==
 
 universalify@^0.1.2:
   version "0.1.2"
