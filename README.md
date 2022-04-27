@@ -4,7 +4,7 @@
 
 # boilerplate-nodejs-interview
 
-> A simple starter template to write some nodejs code questions
+> A simple starter template to write some nodejs interview questions
 
 ### How it works
 
@@ -12,7 +12,14 @@
 $ yarn dev
 ```
 
-Any file inside `src/questions` will be dynamically imported, and if a `run` method is exported it will be executed.
+Any file inside `src/questions` will be dynamically imported, and if a `run` method is exported it will be executed (in watch mode).
+
+
+```sh
+$ yarn dev nameOfQuestion
+```
+
+If a `run` method is exported it will be executed (in watch mode).
 
 ```sh
 $ yarn test

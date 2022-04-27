@@ -2,17 +2,28 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import * as utils from "./index.utils";
 
+async function importAndRunQuestion(fileName: string) {
+  const { run } = await import(path.resolve(__dirname, "questions", fileName));
+
+  if (run) {
+    utils.renderQuestionHeader(fileName);
+
+    await run();
+  }
+}
+
 async function main() {
-  const files = await fs.readdir(path.resolve(__dirname, "questions"));
+  const providedQuestion = process.argv[2]
+  const pathQuestions = path.join(__dirname, "questions")
 
-  for (const file of files) {
-    const { run } = await import(path.resolve(__dirname, "questions", file));
+  if(providedQuestion) {
+    await importAndRunQuestion(providedQuestion)
 
-    if (run) {
-      utils.renderQuestionHeader(file);
+    return;
+  }
 
-      await run();
-    }
+  for (const file of await fs.readdir(pathQuestions)) {
+    await importAndRunQuestion(file);
   }
 }
 
