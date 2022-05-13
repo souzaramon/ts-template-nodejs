@@ -2,7 +2,7 @@
   <img width="80" src="/.github/logo.svg" />
 </div>
 
-# boilerplate-nodejs-interview
+# template-nodejs-interview
 
 > A simple starter template to write some nodejs interview questions
 
