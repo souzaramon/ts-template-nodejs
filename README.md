@@ -26,7 +26,3 @@ $ yarn test
 ```
 
 Any test file (.spec, .test) inside `src/questions` will be executed
-
-### License
-
-MIT
