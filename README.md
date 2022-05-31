@@ -1,5 +1,5 @@
 # :green_heart: ts-template-nodejs
-> A simple starter template to aggregate scripts
+> A simple starter template to nodejs
 
 Running a script
 
