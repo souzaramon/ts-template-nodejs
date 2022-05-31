@@ -4,7 +4,7 @@
   <img width="80" src="/.github/logo.svg" />
 </div>
 
-# 💚 nodejs-template-interview
+# 💚 ts-template-interview
 
 > A simple starter template to write some nodejs interview questions
 
