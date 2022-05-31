@@ -1,4 +1,4 @@
-# :green_heart: ts-template-nodejs
+# 💙 ts-template-nodejs
 > A simple starter template to nodejs
 
 Running a script
