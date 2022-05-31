@@ -1,30 +1,20 @@
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> 
+# :green_heart: ts-template-nodejs
+> A simple starter template to aggregate scripts
 
-<div align="center">
-  <img width="80" src="/.github/logo.svg" />
-</div>
-
-# 💚 ts-template-interview
-
-> A simple starter template to write some nodejs interview questions
-
-### How it works
+Running a script
 
 ```sh
-$ yarn dev
+$ yarn start ./src/<filename>.ts
 ```
 
-Any file inside `src/questions` will be dynamically imported, and if a `run` method is exported it will be executed (in watch mode).
-
+Running a script in watch mode
 
 ```sh
-$ yarn dev nameOfQuestion
+$ yarn start:watch ./src/<filename>.ts
 ```
 
-If a `run` method is exported it will be executed (in watch mode).
+Running tests
 
 ```sh
-$ yarn test
+$ yarn test ./src/<filename>.spec.ts
 ```
-
-Any test file (.spec, .test) inside `src/questions` will be executed

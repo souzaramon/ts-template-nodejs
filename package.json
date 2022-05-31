@@ -1,9 +1,10 @@
 {
-  "name": "job-interview-template",
+  "name": "ts-template-nodejs",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "ts-node-dev --transpile-only",
+    "start:watch": "ts-node-dev --respawn --transpile-only",
     "test": "jest"
   },
   "devDependencies": {
